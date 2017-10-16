@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//litten.me">
   <title>maven 第三方打包 | chiwah的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生于四川，学于津门，业在上海。">
-<meta name="keywords" content="maven">
+  <meta name="description" content="mvn第三方打包地址：https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html 打包命令：mvn install:install-file -Dfile= -DgroupId= \    -DartifactId= -Dversion= -Dpackaging= pom 中配置">
+<meta name="keywords" content="java, maven, 第三方包">
 <meta property="og:type" content="article">
 <meta property="og:title" content="maven 第三方打包">
 <meta property="og:url" content="//litten.me/2017/10/16/guide-3rd-party-jars-local/index.html">
 <meta property="og:site_name" content="chiwah的博客">
-<meta property="og:description" content="生于四川，学于津门，业在上海。">
-<meta property="og:updated_time" content="2017-10-16T08:19:37.000Z">
+<meta property="og:description" content="mvn第三方打包地址：https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html 打包命令：mvn install:install-file -Dfile= -DgroupId= \    -DartifactId= -Dversion= -Dpackaging= pom 中配置">
+<meta property="og:updated_time" content="2017-10-16T08:32:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="maven 第三方打包">
-<meta name="twitter:description" content="生于四川，学于津门，业在上海。">
+<meta name="twitter:description" content="mvn第三方打包地址：https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html 打包命令：mvn install:install-file -Dfile= -DgroupId= \    -DartifactId= -Dversion= -Dpackaging= pom 中配置">
   
     <link rel="alternative" href="/atom.xml" title="chiwah的博客" type="application/atom+xml">
   
@@ -178,7 +178,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>mvn第三方打包地址：<br><a href="https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html" target="_blank" rel="external">https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html</a></p>
+<p>打包命令：<br>mvn install:install-file -Dfile=<path-to-file> -DgroupId=<group-id> \<br>    -DartifactId=<artifact-id> -Dversion=<version> -Dpackaging=<packaging></packaging></version></artifact-id></group-id></path-to-file></p>
+<p>pom 中配置</p>
+<p><build><br>        <plugins><br>            <plugin><br>                <artifactid>maven-assembly-plugin</artifactid><br>                <configuration><br>                    <descriptorrefs><br>                        <descriptorref>jar-with-dependencies</descriptorref><br>                    </descriptorrefs><br>                </configuration><br>            </plugin><br>        </plugins><br>    </build><br></p>
+<p>打fat jar命令<br>mvn assembly:assembly</p>
+
       
 
       
@@ -212,7 +217,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">java, maven, 第三方包</a>
         		</li>
       		
 		</ul>
@@ -280,16 +285,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-  
-    <a href="/2017/10/16/test/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">maven 第三方打包</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -410,7 +405,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">maven</a>
+                <a href="javascript:void(0)" class="js-tag color3">java, maven, 第三方包</a>
               </li>
             
             <div class="clearfix"></div>

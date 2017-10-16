@@ -179,7 +179,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>mvn第三方打包地址：<br><a href="https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html" target="_blank" rel="external">https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html</a></p>
+<p>打包命令：<br>mvn install:install-file -Dfile=<path-to-file> -DgroupId=<group-id> \<br>    -DartifactId=<artifact-id> -Dversion=<version> -Dpackaging=<packaging></packaging></version></artifact-id></group-id></path-to-file></p>
+<p>pom 中配置</p>
+<p><build><br>        <plugins><br>            <plugin><br>                <artifactid>maven-assembly-plugin</artifactid><br>                <configuration><br>                    <descriptorrefs><br>                        <descriptorref>jar-with-dependencies</descriptorref><br>                    </descriptorrefs><br>                </configuration><br>            </plugin><br>        </plugins><br>    </build><br></p>
+<p>打fat jar命令<br>mvn assembly:assembly</p>
+
       
 
       
@@ -192,7 +197,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">java, maven, 第三方包</a>
         		</li>
       		
 		</ul>
@@ -202,70 +207,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/16/guide-3rd-party-jars-local/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/16/test/">maven 第三方打包</a>
-    </h1>
-  
-
-        
-        <a href="/2017/10/16/test/" class="archive-article-date">
-  	<time datetime="2017-10-16T06:46:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>this is content for chiwah keen</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/16/test/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/10/16/guide-3rd-party-jars-local/">more >></a>
         </p>
       
 
@@ -388,7 +330,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">maven</a>
+                <a href="javascript:void(0)" class="js-tag color3">java, maven, 第三方包</a>
               </li>
             
             <div class="clearfix"></div>
